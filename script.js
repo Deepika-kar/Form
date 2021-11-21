@@ -1,6 +1,6 @@
 const form = document.querySelector("form");
 
-if (localStorage) {
+if (localStorage.formdata) {
   const formData = JSON.parse(localStorage.formdata);
   for (let data in formData) {
     form[data].value = formData[data];
